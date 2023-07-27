@@ -18,7 +18,7 @@ library(RSQLite)
 
 update_db(dbdir = "./", dbname = "nfl_pbp_db")
 
-connection <- DBI::dbConnect(RSQLite::SQLite(), "./nfl_pbp_db")
+connection <- DBI::dbConnect(RSQLite::SQLite(), "../nfl_sql_db/nfl_pbp_db")
 connection
 
 dbListTables(connection)
